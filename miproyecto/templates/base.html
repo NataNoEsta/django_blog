@@ -1,0 +1,17 @@
+<html lang="en">
+
+<head>
+    {% load bootstrap4 %}
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="static/style.css">
+    {% bootstrap_css %}
+    
+</head>
+
+<body>
+    {% block content %}
+    {% endblock %}
+    {% bootstrap_javascript jquery='full' %}
+</body>
+
+</html>

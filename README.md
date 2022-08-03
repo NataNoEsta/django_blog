@@ -31,9 +31,9 @@ Esto creará dentro de tu proyecto una carpeta que dir venv (o el nombre que eli
 >``C:\folder\project\ -> venv\Scripts\activate
 >(venv) C:\folder\project``
 
-3 . Instala Django
+3 . Instalar requisitos
 
->``(venv) C:\folder\project\python -m pip install django``
+>``(venv) C:\folder\project\pip install -r requirements.txt``
 
 ## Correr el proyecto
 Ya seguidos los pasos anteriores para preparar tu enotnro y poder ejecutar este proyecto, estás listo para clonar y seguir con los demás pasos.
@@ -51,10 +51,11 @@ Insert here an image of the preview if your project has one. The image can be in
 
 ## Integrantes/Colaboradores:
 
-![]https://github.com/natanatalina
-![]https://github.com/Valen1210
-![]https://github.com/N1CORTES
-![]https://github.com/lucasexrojas
-![]https://github.com/GiulianaBonzi
+:girl:[Natasha](https://github.com/natanatalina)
+:boy:[Valentino](https://github.com/Valen1210)
+:boy:[Nico](https://github.com/N1CORTES)
+:boy:[Lucas](https://github.com/lucasexrojas)
+:girl:[Giuli](https://github.com/GiulianaBonzi)
+:boy:[Fede](https://github.com/Darknessblack)
 
 ### Notas
