@@ -1,9 +1,24 @@
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color:crimson;
+    color: darkslategrey;
+}
+.jumbotron {
+    background-image: linear-gradient(90deg, rgb(160, 150, 252),rgb(185, 253, 255), rgb(247, 217, 255));
 }
 
 div h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
+}
+footer{
+    display: block;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-link, .nav-item, .dropdown-item {
+    font-family: Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: 11px;
 }

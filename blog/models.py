@@ -1,7 +1,8 @@
 from django.conf import settings
 from django.db import models
-
+#from django.forms import CharField, DateField
 from django.utils import timezone
+
 
 # Create your models here.
 class Post(models.Model):
@@ -16,4 +17,4 @@ class Post(models.Model):
         self.save()
 
     def __str__(self):
-        return self.titulo
+        return f'{self.titulo}-{self.autor}'

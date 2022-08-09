@@ -1,8 +1,10 @@
 from django.urls import path
-#from . import views
-from blog.views import HomeView #se importa la clase HomeView como una vista desde views en la app blog
+from . import views
+#from .views import PostList
 
 urlpatterns = [
-    #path('',views.home, name='home'), # 
-    path('', HomeView.as_view(), name='home'), 
+    path('', views.home, name='home'),
+    path('blog/post_list/', views.post_list, name="post_list"),
+    #path('blog/post_list/', PostList.as_view(), name='post_list'), 
+
 ]
