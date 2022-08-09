@@ -39,11 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap4',
-<<<<<<< HEAD
     'blog', #agregado blog
-    
-=======
->>>>>>> 2a4a9e3951053547f66ea33a96adda16ec0537ef
+
 ]
 
 MIDDLEWARE = [
@@ -61,11 +58,9 @@ ROOT_URLCONF = 'miproyecto.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-<<<<<<< HEAD
         'DIRS': [os.path.join(os.path.dirname(BASE_DIR),'miproyecto/templates')], #agregado blog
-=======
+
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
->>>>>>> 2a4a9e3951053547f66ea33a96adda16ec0537ef
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
