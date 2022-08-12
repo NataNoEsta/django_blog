@@ -1,24 +1,100 @@
-* {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+/* stylelint-disable selector-list-comma-newline-after */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+body {
+    font-family: 'Georgia', 'Playfair Display', monospace, serif;
+    background-color: whitesmoke;
     color: darkslategrey;
 }
-.jumbotron {
-    background-image: linear-gradient(90deg, rgb(160, 150, 252),rgb(185, 253, 255), rgb(247, 217, 255));
+#banner {
+    background-color: rgb(196, 212, 255);
+    background-image: url("/static/lalcecsp.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height:250px;
+    width: 1000px;
+   
 }
 
-div h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-}
-footer{
-    display: block;
-    bottom:0;
-    width: 100%;
-    text-align: center;
+.container {
+background-color: transparent;
 }
 
-.nav-link, .nav-item, .dropdown-item {
-    font-family: Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-    font-size: 11px;
+.nav .nav-pills {
+  align-items: center;
+  border-left: 1px solid whitesmoke;
+  font-family: 'Lucida Sans', sans-serif;
+  color:whitesmoke;
+  /* text-shadow: 1px 1px 1px rgb(150, 150, 150); */
+}
+
+.nav-pills .nav-link.active {
+  background-color: transparent;
+  border: 1px solid grey;
+  color:inherit;
+}
+
+.blog-header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+.display-4 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
+  }
+}
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  font-size: 2rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+  padding: 2rem 0;
+  color: #727272;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
 }

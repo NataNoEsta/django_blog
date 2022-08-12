@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block entry %}
+  
+<div class="row g-0 border rounded overflow-scroll flex-md-row mb-4 shadow-sm h-md-200 position-relative"> 
+    <div class="col p-4 d-flex flex-column position-static">
+     <article class="blog-post">
+        <h3 class="blog-post-title mb-1">{{ post.titulo }}</h3></a>
+        <h6>by {{ post.autor }} | {{ post.fecha_publicacion }} </h6>
+        <p>{{ post.entrada }} </p> 
+    </article>
+    </div>
+</div>
+  
+{% endblock %}
