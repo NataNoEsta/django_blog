@@ -1,13 +1,16 @@
 #from django.shortcuts import render, HttpResponse #funciones
 from django.views.generic import TemplateView, ListView, DetailView
 from .models import Post
+from django.shortcuts import render
 
 #View basada en funiones correspondiente a 'home.html'
 #View basada en clases
 
-class HomeView(TemplateView):
-    model = Post
-    template_name = 'home.html'
+def homeView(request):
+    return render(request, 'home.html')
+
+def acercaView(request):
+    return render(request, 'acerca.html')
 
 class PostList(ListView):
     model = Post
