@@ -1,22 +1,22 @@
 {% block sidebar %}
 {% load static %}
-<div id="sidebar">
-<div class="position-sticky" style="top: 2rem;">
-    <div class="p-4 my-3 bg-light rounded">
-        <h4 class="fst-italic text-center">Sidebar</h4>
-        <img src="{% static 'logo.png' %}" alt="logo" id="logo">
-        <p class="mb-0"> LALCEC es una organización fuerte, comprometida y dinámica, que participa de diferentes redes con pares, empresas y gobiernos, teniendo presencia activa a nivel nacional e internacional.
-        </p>
+<div class="col md-4" id="sidebar">
+    <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-light rounded">
+            <h4 class="fst-italic text-center">Sidebar</h4>
+            <img src="{% static 'logo.png' %}" alt="logo" id="logo">
+            <p class="mb-0"> LALCEC es una organización fuerte, comprometida y dinámica, que participa de diferentes redes con pares, empresas y gobiernos, teniendo presencia activa a nivel nacional e internacional.
+            </p>
+        </div>
+        <div class="p-4">
+            <h4 class="fst-italic">Contactanos en nuestras redes</h4>
+                <ol class="list-unstyled">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                </ol>
+        </div>
     </div>
-<div class="p-4">
-    <h4 class="fst-italic">Contactanos en nuestras redes</h4>
-        <ol class="list-unstyled">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">WhatsApp</a></li>
-        </ol>
-</div>
-</div>
 </div>
 
 {% endblock %}

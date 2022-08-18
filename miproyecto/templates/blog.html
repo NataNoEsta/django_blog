@@ -3,15 +3,16 @@
 {% block entry %}
     
     {% for post in object_list %}
-
-
          <article class="blog-post">
-            <h3 class="blog-post-title mb-1"><a href="{% url 'entry' post.pk %}">{{ post.titulo }}</h3></a>
-            <h6>by {{ post.autor }} | {{ post.fecha_publicacion }} </h6>
-            <p>{{ post.entrada }} </p> 
+            <h3 class="blog-post-title mb-2"><a href="{% url 'entry' post.pk %}">{{ post.titulo }}</h3></a>
+            <p class="blog-post-meta">Por: {{ post.autor }} | {{ post.fecha_publicacion }} </p>
+            <p>{{ post.entrada }} </p>   
+        <br><hr>
         </article>
-
     {% endfor %}
-  
+<nav class="blog-pagination" aria-label="Pagination">
+    <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
+    <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
+</nav>  
 {% endblock %}
 {% block sidebar %} {% include 'sidebar.html' %} {% endblock %}

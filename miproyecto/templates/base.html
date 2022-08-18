@@ -31,36 +31,35 @@
           </ul>
         </nav>
     </div>
-    
-      <div class="jumbotron p-4 p-md-5 mb-2 rounded text-bg-dark" id="banner">
-        <div class="col-md-6 px-0">
-          <h1 class="display-4"> </h1>
-              <!-- <p class="lead my-3"></p> -->     
-        </div>
-      </div>
+    <div class="p-4 p-md-5 mb-4 rounded text-bg-light" id="banner">
+			<div class="col-md-6 px-0">
+				<!-- <h1 class="display-4 fst-italic">Lalcec</h1>
+				<p class="lead my-3">Liga Argentina de Lucha contra el cancer</p> -->
+			</div>
+		</div>
     </header>
   </div>
 
-  <main role="main">
-      <div class="container mr-auto">
-          <div class="row g-0 border rounded overflow-scroll flex-md-row mb-4 shadow-sm h-md-200 position-relative">
-            <div class="col p-4 d-flex flex-column position-static">
-                {% block entry %}
-                {% endblock %}   
-              </div>
-              
-              <div class="col-md-3">
-                {% block sidebar %}
-                {% endblock %}
-              </div>
-          </div>
+  <main class="container">
+    <div class="row g-5">
+      <div class="col md-8">
+        <div class="col p-4 d-flex flex-column position-static">
+          {% block entry %}
+          {% endblock %}   
+        <hr>
         </div>
-
+      </div>
+        
+      <div class="col-md-4">
+        {% block sidebar %}
+        {% endblock %}
+      </div>
+    </div>
   </main>
-
   {% bootstrap_javascript jquery='full' %}
 </body>
-<footer class="blog-footer">
+
+  <footer class="blog-footer">
     <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
     <p><a href="#">Back to top</a></p>
   </footer>
