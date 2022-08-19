@@ -9,6 +9,8 @@
     {% load bootstrap4 %}
     <link rel="stylesheet" href="{% static 'style.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>{% block title %} Blog {% endblock %}</title> 
     {% bootstrap_css %}
     
@@ -23,11 +25,11 @@
         </div>
         <nav class="navbar justify-content-center">
           <ul class="nav">
-            <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="/blog" class="nav-link">Blog</a></li>
-            <li class="nav-item"><a href="/campanas" class="nav-link">Campañas</a></li>
-            <li class="nav-item"><a href="/acerca" class="nav-link">Nosotros</a></li>
-            <li class="nav-item"><a href="/contacto" class="nav-link">Contacto</a></li>
+            <li class="nav-item"><a href="/" class="nav-link active" aria-current="page"><b>HOME</b></a></li>
+            <li class="nav-item"><a href="/blog" class="nav-link"><b>BLOGS</b></a></li>
+            <li class="nav-item"><a href="/campanas" class="nav-link"><b>CAMPAÑAS</b></a></li>
+            <li class="nav-item"><a href="/acerca" class="nav-link"><b>NOSOTROS</b></a></li>
+            <li class="nav-item"><a href="/contacto.html" class="nav-link"><b>CONTACTO</b><a></li>
           </ul>
         </nav>
     </div>
@@ -60,7 +62,7 @@
 </body>
 
   <footer class="blog-footer">
-    <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+   <!--<p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>-->
     <p><a href="#">Back to top</a></p>
   </footer>
 
