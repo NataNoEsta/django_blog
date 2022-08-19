@@ -78,11 +78,19 @@ WSGI_APPLICATION = 'miproyecto.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
+<<<<<<< HEAD
    'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'bd_proyecto',
         'USER': 'postgres',
-        'PASSWORD': 'missenplac3123',
+        'PASSWORD': 'Nameacuseis1',
+=======
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'bd_proyecto',
+        'USER': 'postgres',
+        'PASSWORD': 'Namecuseis1',
+>>>>>>> refs/remotes/origin/master
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
