@@ -16,6 +16,7 @@ class Post(models.Model):
         self.fecha_publicacion = timezone.now()
         self.save()
 
+    #permite regresar a pagina principal una vez realizado el post
     def get_absolute_url(self):
         return reverse('home')
 
