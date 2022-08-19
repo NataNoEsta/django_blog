@@ -3,7 +3,7 @@ from django.views.generic import TemplateView, ListView, DetailView
 from .models import Post
 from django.shortcuts import render
 
-#View basada en funiones correspondiente a 'home.html'
+#View basada en funciones correspondiente a 'home.html'
 #View basada en clases
 
 def homeView(request):
@@ -11,6 +11,12 @@ def homeView(request):
 
 def acercaView(request):
     return render(request, 'acerca.html')
+
+def contactoView(request):
+    return render(request, 'contacto.html')
+
+def campañasView(request):
+    return render(request, 'campañas.html')
 
 class PostList(ListView):
     model = Post

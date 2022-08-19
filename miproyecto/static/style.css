@@ -88,6 +88,20 @@ article > h3 > a {
   color: #727272;
 }
 
+.card-body {
+  text-align: center;
+}
+.iframe {
+  display: block;
+  align-self: center;
+}
+.map {
+  max-width: 600px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin: 0px;
+}
+
 /*
  * Footer
  */
