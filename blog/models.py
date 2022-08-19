@@ -1,12 +1,12 @@
 from django.conf import settings
 from django.db import models
-#from django.forms import CharField, DateField
 from django.utils import timezone
-
-
+from django.contrib.auth.models import User
+from django.urls import reverse
 # Create your models here.
+
 class Post(models.Model):
-    autor = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    autor = models.ForeignKey(User, on_delete=models.CASCADE)
     titulo = models.CharField(max_length=255)
     entrada = models.TextField()
     fecha_creacion = models.DateTimeField(default=timezone.now)
@@ -16,5 +16,8 @@ class Post(models.Model):
         self.fecha_publicacion = timezone.now()
         self.save()
 
+    def get_absolute_url(self):
+        return reverse('home')
+
     def __str__(self):
-        return f'{self.titulo}-{self.autor}'
+        return f'{self.titulo}'
