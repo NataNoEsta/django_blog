@@ -1,7 +1,6 @@
 #from django.shortcuts import render, HttpResponse #funciones
-from django.views.generic import ListView, DetailView, CreateView
-from django.utils import timezone
-from .forms import PostForm
+from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from .forms import PostForm, EditForm
 from .models import Post
 from django.shortcuts import render, redirect
 
@@ -17,13 +16,18 @@ def acercaView(request):
 class PostList(ListView):
     model = Post
     template_name = 'blog.html'
-    ordering = ['fecha_publicacion']
+    ordering = ['-fecha_publicacion']
+    paginate_by = 2
 
 class EntryView(DetailView):
     model = Post
     template_name = 'entry.html'
 
 class AddPost(CreateView):
-    model = Post
     form_class = PostForm
     template_name = 'add_post.html'
+
+class EditPost(UpdateView):
+    model = Post
+    form_class = EditForm
+    template_name = 'edit_post.html'

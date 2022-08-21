@@ -17,10 +17,10 @@ h1, h2, h3, h4 {
   font-family: 'Playfair Display';
   font-weight: 100;
 }
-article > h3 > a {
+article > a {
   color: teal;
 }
-.p-4 li > a{
+a {
   color:rgb(248, 142, 66);
   font-weight: 300;
 }
@@ -30,7 +30,7 @@ article > h3 > a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height:270px;  
+    height:300px;  
 }
 
 img {
@@ -41,10 +41,10 @@ img {
   max-width:400px;
   padding: 15px;
 }
-
-/* .container {
-background-color: transparent;
-} */
+#logo {
+  position:relative;
+  width: 300px;
+}
 
 .blog-header {
   border-bottom: 1px solid #e5e5e5;
