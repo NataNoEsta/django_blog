@@ -22,17 +22,17 @@
     <header class="blog-header lh-1 py-3">
       <div class="row flex-nowrap justify-content-between align-items-center">
         <div class="col-4 text-center">
-          <a class="blog-header-logo text-dark justify-content" href="/"><i class="bi bi-house-heart"></i><span class="fs-2 py-3">LALCEC</span></a>
+          <a class="blog-header-logo text-dark justify-content" href="/"><span class="fs-2 py-3">LALCEC</span></a>
         </div>
         <nav class="navbar justify-content-center">
           <ul class="nav">
-            <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">HOME</a></li>
-            <li class="nav-item"><a href="{% url 'blog' %}" class="nav-link">BLOG</a></li>
+            <li class="nav-item"><a href="{% url 'blog' %}" class="nav-link"><i class="bi bi-house-heart"></i>BLOG</a></li>
             <li class="nav-item"><a href="{% url 'add_post' %}" class="nav-link">Publicar</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Log in</a></li>
-            <li class="nav-item"><a href="{% url 'acerca' %}" class="nav-link">NOSOTROS</a></li>
-            <li class="nav-item"><a href="/campañas" class="nav-link"><b>CAMPAÑAS</b></a></li>
-            <li class="nav-item"><a href="/contacto" class="nav-link">CONTACTO</a></li>
+            <li class="nav-item"><a href="{% url 'login' %}" class="nav-link">Ingresar</a></li>
+            <li class="nav-item"><a href="{% url 'signup' %}" class="nav-link">Registrarse</a></li>
+            <li class="nav-item"><a href="{% url 'acerca' %}" class="nav-link">Nosotros</a></li>
+            <li class="nav-item"><a href="/campañas" class="nav-link">Campañas</a></li>
+            <li class="nav-item"><a href="/contacto" class="nav-link">Contacto</a></li>
           </ul>
         </nav>
     </div>
