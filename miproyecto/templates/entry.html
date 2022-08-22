@@ -1,4 +1,4 @@
-{% extends 'blog.html' %}
+{% extends 'base.html' %}
 {% block title %} {{ post.title }} {% endblock %}
 {% block entry %}
      <article class="blog-post">
@@ -6,7 +6,8 @@
         <p class="blog-post-meta">Por: {{ post.autor }} | {{ post.fecha_publicacion }}</p>
         
         <p>{{ post.entrada }} </p> 
-       
+        <a  href="{% url 'edit_post' post.pk %}" class="btn btn-outline rounded-pill">Edit</a>
+        <a href="{% url 'blog' %}" class="btn btn-outline rounded-pill">BACK</a>
     </article>
   
 {% endblock %}

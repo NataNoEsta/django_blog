@@ -1,6 +1,7 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-{% load static %}
+
 
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,11 +26,13 @@
         </div>
         <nav class="navbar justify-content-center">
           <ul class="nav">
-            <li class="nav-item"><a href="/" class="nav-link active" aria-current="page"><b>HOME</b></a></li>
-            <li class="nav-item"><a href="/blog" class="nav-link"><b>BLOGS</b></a></li>
+            <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">HOME</a></li>
+            <li class="nav-item"><a href="{% url 'blog' %}" class="nav-link">BLOG</a></li>
+            <li class="nav-item"><a href="{% url 'add_post' %}" class="nav-link">Publicar</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Log in</a></li>
+            <li class="nav-item"><a href="{% url 'acerca' %}" class="nav-link">NOSOTROS</a></li>
             <li class="nav-item"><a href="/campañas" class="nav-link"><b>CAMPAÑAS</b></a></li>
-            <li class="nav-item"><a href="/acerca" class="nav-link"><b>NOSOTROS</b></a></li>
-            <li class="nav-item"><a href="/contacto" class="nav-link"><b>CONTACTO</b><a></li>
+            <li class="nav-item"><a href="/contacto" class="nav-link">CONTACTO</a></li>
           </ul>
         </nav>
     </div>
@@ -48,22 +51,29 @@
         <div class="col p-4 d-flex flex-column position-static">
           {% block entry %}
           {% endblock %}   
-        <hr>
         </div>
+
+        <nav class="blog-pagination" aria-label="Pagination">
+          {% block nav %}
+          {% endblock %}
+        </nav>
       </div>
-        
+      
       <div class="col-md-4">
         {% block sidebar %}
         {% endblock %}
       </div>
+
+
     </div>
   </main>
+
   {% bootstrap_javascript jquery='full' %}
 </body>
 
-  <footer class="blog-footer">
-   <!--<p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>-->
-    <p><a href="#">Back to top</a></p>
-  </footer>
+<footer class="blog-footer">
+  <!-- <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
+  <p><a href="#">Volver</a></p>
+</footer>
 
 </html>
