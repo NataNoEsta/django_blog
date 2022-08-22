@@ -19,6 +19,7 @@ from django.urls import path, include
 from blog.views import campañasView, contactoView
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')), #agregado urls de blog
-
+    path('', include('blog.urls')),
+    path('usuarios/', include('django.contrib.auth.urls')),
+    path('usuarios', include('usuarios.urls')),
 ]

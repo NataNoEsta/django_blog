@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bootstrap4',
-    'blog', #agregado blog
+    'blog',
+    'usuarios',
 
 ]
 
@@ -85,9 +86,8 @@ DATABASES = {
         'PASSWORD': 'Namecuseis1',
         'HOST': '127.0.0.1',
         'PORT': '5432',
-    }
+    },
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -137,3 +137,6 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),'media'),
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'

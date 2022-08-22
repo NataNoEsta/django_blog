@@ -1,0 +1,18 @@
+{% block nav %}
+
+    {% for post in page_obj %}
+        {{ Post.all }}
+    {% endfor %}
+
+    {% if page_obj.has_previous %}
+    <a class="btn btn-outline-primary rounded-pill " href="?page=1">&laquo; 1 </a>
+    <a class="btn btn-outline-primary rounded-pill" href="?page={{ page_obj.previous_page_number }}">Atrás</a>
+    {% endif %}
+        <span class="current">
+            Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+        </span>
+    {% if page_obj.has_next %}
+    <a class="btn btn-outline-primary rounded-pill disabled" href="?page={{ page_obj.next_page_number }}">Siguiente</a>
+    <a class="btn btn-outline-primary rounded-pill" href="?page={{ page_obj.paginator.num_pages }}">última &raquo;</a>
+    {% endif %}
+{% endblock %}    

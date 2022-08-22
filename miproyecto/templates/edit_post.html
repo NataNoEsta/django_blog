@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %} Editar post {% endblock %}
+{% block entry %}
+     <article class="blog-post">
+        <h3 class="blog-post-title mb-1">Editar blog post</h3></a>
+        <div class="form-group">
+            <form method="POST" class="post-form">
+                {% csrf_token %}
+                <!-- as_p hace que el formulario se muestre como <p></p>
+                pero podría usarse <li>, <table> etc-->
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-outline rounded-pill">Enviar</button>
+            </form>
+        </div> 
+    </article>
+  
+{% endblock %}
