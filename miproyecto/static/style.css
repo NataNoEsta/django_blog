@@ -1,9 +1,11 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
-* {
-  font-family: 'Lexend Deca', sans-serif;
-  color: darkslategrey;
-  font-weight: 200;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: darkslategrey;
+  background-color: whitesmoke;
+  font-weight: 200;
 }
 .nav > li > a {
   color:darkslategray;
@@ -26,12 +28,33 @@ a {
 }
 
 #banner {
-    background-image: url("/static/lalcecsp.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    height:300px;  
+  background-image: url("/static/lalcecsp.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height:300px;  
 }
+.container {
+background-color: transparent;
+}
+.nav > li > a {
+  color:darkslategray;
+  border-left: 0.5px solid whitesmoke;
+  line-height: 1em;
+}
+.nav > li > a:hover{
+  color: rgb(248, 142, 66)
+}
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display';
+  font-weight: 100;
+}
+article > h3 > a {
+  color: teal;
+}
+.p-4 li > a{
+  color:rgb(248, 142, 66);
+  font-weight: 300;
 
 img {
   display: block;
@@ -44,7 +67,6 @@ img {
 #logo {
   position:relative;
   width: 300px;
-}
 
 .blog-header {
   border-bottom: 1px solid #e5e5e5;
@@ -91,6 +113,20 @@ img {
 .blog-post-meta {
   margin-bottom: 1.25rem;
   color: #727272;
+}
+
+.card-body {
+  text-align: center;
+}
+.iframe {
+  display: block;
+  align-self: center;
+}
+.map {
+  max-width: 600px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin: 0px;
 }
 
 /*
