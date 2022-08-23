@@ -1,9 +1,9 @@
 #from django.shortcuts import render, HttpResponse #funciones
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .forms import PostForm, EditForm
-from .models import Post
+from .models import Categoria, Post
 from django.shortcuts import render
-from django.urls import reverse_lazy
+from django.urls import reverse_lazy, reverse
 
 #View basada en funciones correspondiente a 'home.html'
 #View basada en clases
@@ -43,3 +43,8 @@ class DeletePost(DeleteView):
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
+
+class AddCategoria(CreateView):
+    model = Categoria
+    template_name = 'add_categoria.html'
+    fields = '__all__'
