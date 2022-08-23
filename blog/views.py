@@ -1,8 +1,9 @@
 #from django.shortcuts import render, HttpResponse #funciones
-from django.views.generic import ListView, DetailView, CreateView, UpdateView
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .forms import PostForm, EditForm
 from .models import Post
-from django.shortcuts import render, redirect
+from django.shortcuts import render
+from django.urls import reverse_lazy
 
 #View basada en funciones correspondiente a 'home.html'
 #View basada en clases
@@ -16,8 +17,8 @@ def acercaView(request):
 def contactoView(request):
     return render(request, 'contacto.html')
 
-def campañasView(request):
-    return render(request, 'campañas.html')
+def accionesView(request):
+    return render(request, 'acciones.html')
 
 class PostList(ListView):
     model = Post
@@ -37,3 +38,8 @@ class EditPost(UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'edit_post.html'
+
+class DeletePost(DeleteView):
+    model = Post
+    template_name = 'delete_post.html'
+    success_url = reverse_lazy('home')
