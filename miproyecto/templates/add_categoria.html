@@ -1,14 +1,14 @@
 {% extends 'blog.html' %}
-{% block title %} Crear post {% endblock %}
+{% block title %} Crear nueva categoría {% endblock %}
 {% block entry %}
      <article class="blog-post">
-        <h3 class="blog-post-title mb-1">Crear blog post</h3></a>
+        <h4 class="blog-post-title mb-1">Añadir</h3></a>
         <div class="form-group">
             <form method="POST" class="post-form">
                 {% csrf_token %}
 
                 {{ form.as_p }}
-                <button type="submit" class="btn btn-primary">Post</button>
+                <button type="submit" class="btn btn-primary">Agregar</button>
             </form>
         </div> 
     </article>

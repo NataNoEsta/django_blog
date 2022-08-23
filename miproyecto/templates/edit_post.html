@@ -9,9 +9,13 @@
                 <!-- as_p hace que el formulario se muestre como <p></p>
                 pero podría usarse <li>, <table> etc-->
                 {{ form.as_p }}
-                <button type="submit" class="btn btn-outline rounded-pill">Enviar</button>
+                <br><hr>
+                <button type="submit" class="btn btn-outline-primary rounded-pill">Guardar</button>
+                <a class="btn btn-outline-primary rounded-pill" href="{% url 'blog' %}">Volver</a>
+                <a class="btn btn-outline-danger" href="{% url 'delete_post' post.pk %}" id="delete">Delete</a>
             </form>
-        </div> 
+        </div>
+        <a class="btn-outline-primary" href="{% url 'add_categoria' %}">Agregar categoría</a>
     </article>
   
 {% endblock %}
