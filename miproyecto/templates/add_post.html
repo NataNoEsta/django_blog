@@ -1,16 +1,24 @@
 {% extends 'blog.html' %}
 {% block title %} Crear post {% endblock %}
 {% block entry %}
+{% if user.is_authenticated %}
      <article class="blog-post">
         <h3 class="blog-post-title mb-1">Crear blog post</h3></a>
         <div class="form-group">
             <form method="POST" class="post-form">
                 {% csrf_token %}
-
+                <!-- {{ form.media }} -->
                 {{ form.as_p }}
                 <button type="submit" class="btn btn-primary">Post</button>
             </form>
         </div> 
     </article>
-  
+    <script>
+        var autor = "{{ user.id }}";
+        document.getElementById("nombre").value = autor;
+    </script>
+{% else %}
+<p>Error. Permiso denegado</p>
+{% endif %}
+
 {% endblock %}
