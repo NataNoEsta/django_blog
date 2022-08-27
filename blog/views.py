@@ -1,4 +1,3 @@
-#from django.shortcuts import render, HttpResponse #funciones
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .forms import PostForm, EditForm
 from .models import Categoria, Post
@@ -48,3 +47,7 @@ class AddCategoria(CreateView):
     model = Categoria
     template_name = 'add_categoria.html'
     fields = '__all__'
+
+def CategoriasView(request, categoria):
+    categoria_posts = Post.objects.filter(categoria=categoria)
+    return render(request, 'categorias.html', {'categoria':categoria, 'categoria_posts':categoria_posts})

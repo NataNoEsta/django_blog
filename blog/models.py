@@ -30,4 +30,4 @@ class Categoria(models.Model):
         return f'{self.nombre}'
 
     def get_absolute_url(self):
-        return reverse('blog/entry/<int:pk>')
+        return reverse('blog')
