@@ -1,16 +1,19 @@
-{% extends 'blog.html' %}
+{% extends 'base.html' %}
 {% block title %} Login {% endblock %}
 {% block entry %}
-     <article class="blog-post">
-        <h3 class="blog-post-title mb-1">Login</h3></a>
-        <div class="form-group">
+    <article class="blog-post">
+    <h3 class="blog-post-title mb-1">Login</h3></a>
             <form method="POST" class="post-form">
                 {% csrf_token %}
-
-                {{ form.as_p }}
+                <div class="form-group"><label for="username">Usuario</label>
+                    <input type="text" class="form-control" name="username" placeholder="usuario">
+                    </div>
+                    <div class="form-group"><label for="password">Contraseña</label>
+                    <input type="password" class="form-control" name="password" placeholder="****">
+                </div>
                 <button type="submit" class="btn btn-primary">Ok</button>
             </form>
-        </div> 
+        <p>**Si no estás registrado, podés hacerlo en <a href="{% url 'signup' %}">este link.</a></p>
     </article>
   
 {% endblock %}
