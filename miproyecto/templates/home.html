@@ -2,22 +2,18 @@
 {% load static %}
 {% block title %} LALCEC - Saenz Peña {% endblock %}
 
-        {% block entry %}
-      
-            <article class="blog-post">
-                <h2 id="acerca" class="blog-post-title mb-1"> ¡Bienvenido! </a></h2>
-                <img src="{% static 'lalcec100.png' %}" id="img-home">
-                <br><br>
-                <p>La Liga Argentina de Lucha Contra el Cáncer (LALCEC) es una organización de la sociedad civil creada el 22 de julio de 1921. 
-                <p>Somos una organización fuerte, comprometida y dinámica, que participa de diferentes redes con pares, empresas y gobiernos, teniendo presencia activa a nivel nacional e internacional</p>
-                <a class="btn-outline-primary" href="{% url 'acerca' %}">Seguir leyendo...</a>
-            </article>
-            <hr>
-    
+    {% block entry %}
+        <article class="blog-post">
+            <h2 class="blog-post-title mb-1"> ¡Bienvenido! </a></h2>
+            <img src="{% static 'bannerinfo.jpg' %}" id="img-home">
+            <br><br>
+            <p>La Liga Argentina de Lucha Contra el Cáncer (LALCEC) es una organización de la sociedad civil creada el 22 de julio de 1921. 
+            <p>Somos una organización fuerte, comprometida y dinámica, que participa de diferentes redes con pares, empresas y gobiernos, teniendo presencia activa a nivel nacional e internacional</p>
+            <a class="btn-outline-primary" href="{% url 'acerca' %}">Seguir leyendo...</a>
+        </article>
+        <hr>
+    {% endblock %}   
+    <div class="col-md-4">
+        {% block sidebar %} {% include 'sidebar.html' %} 
         {% endblock %}
-        
-        <div class="col-md-4">
-            {% block sidebar %} {% include 'sidebar.html' %} 
-            {% endblock %}
-        </div>
-
+    </div>

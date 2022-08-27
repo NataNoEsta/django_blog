@@ -2,16 +2,15 @@
 {% block title %} Blog {% endblock %}
 
 {% block entry %}
-    
-    {% for post in object_list %}
+<h3 class="blog-post-title mb-2">Posts en: {{ categoria }}</h4><br>
+    {% for post in categoria_posts %}
          <article class="blog-post">
             <h3 class="blog-post-title mb-2"><a href="{% url 'entry' post.pk %}">{{ post.titulo }}</h3></a>
             <p class="blog-post-meta">Por: {{ post.autor }} | {{ post.fecha_publicacion }} </p>
             <p id="entrybody">{{ post.entrada|slice:":200" }} </p>   
             <a class="btn-outline-primary" href="{% url 'entry' post.pk %}">Seguir leyendo...</a>
-            <p class="blog-post-meta" id="tags"><i class="bi bi-tags"></i><a href="{% url 'categorias' post.categoria %}">{{ post.categoria }}</a></p> 
+            <p class="blog-post-meta" id="tags"><i class="bi bi-tags"></i>{{ post.categoria }}</p> 
         </article>
     {% endfor %}
 {% endblock %}
-{% block nav %} {% include 'pagination.html' %} {% endblock %}
 {% block sidebar %} {% include 'sidebar.html' %} {% endblock %}
