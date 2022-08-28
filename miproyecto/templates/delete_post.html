@@ -9,8 +9,8 @@
             <form method="POST" class="post-form">
                 {% csrf_token %}
                 <p>Estás seguro que deseas eliminar este contenido?</p>
-                <button type="submit" class="btn btn-outline-primary rounded-pill">Si</button>
-                <a class="btn btn-outline-secondary rounded-pill" href="{% url 'home' %}">No</a>
+                <button type="submit" class="btn btn-outline-danger rounded-pill">Eliminar</button>
+                <a class="btn btn-outline-primary rounded-pill" href="{% url 'home' %}">Volver</a>
             </form>
         </div> 
     </article>    
