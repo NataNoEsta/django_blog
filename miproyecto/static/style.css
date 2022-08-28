@@ -42,7 +42,7 @@ background-color: transparent;
   border-left: 0.5px solid whitesmoke;
   line-height: 1em;
 }
-a:hover{
+.nav a:hover{
   color: orangered;
   background-color:whitesmoke;
 }
@@ -79,7 +79,7 @@ img {
 
 .blog-header-logo {
   font-family: Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 .display-4 {
@@ -156,4 +156,8 @@ img {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+ul.list-unstyled li{
+  display:inline-block;
+  font-size: 1.3rem;
 }
