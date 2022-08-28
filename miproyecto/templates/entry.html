@@ -1,12 +1,10 @@
-{% extends 'base.html' %}
+{% extends 'home.html' %}
 {% block title %} {{ post.title }} {% endblock %}
 {% block entry %}
      <article class="blog-post">
-        <h3 class="blog-post-title mb-1">{{ post.titulo }}</h3></a>
-        <p class="blog-post-meta">Por: {{ post.autor }} | {{ post.fecha_publicacion }}</p>
-        
+        <h3 class="blog-post-title mb-4">{{ post.titulo }}</h3></a>
+        <p class="blog-post-meta">Por: {{ post.autor.first_name }} {{ post.autor.last_name }} | {{ post.fecha_publicacion }}</p>
         <p>{{ post.entrada }} </p> 
-
         <br>
         <p class="blog-post-meta" id="tags"><i class="bi bi-tags"></i><a href="{% url 'categorias' post.categoria %}">{{ post.categoria }}</a></p> 
         <a href="{% url 'blog' %}" class="btn btn-outline-primary rounded-pill">Volver</a>

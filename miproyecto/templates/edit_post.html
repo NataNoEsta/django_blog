@@ -1,23 +1,21 @@
-{% extends 'base.html' %}
+{% extends 'home.html' %}
 {% block title %} Editar post {% endblock %}
 {% block entry %}
 {% if user.is_authenticated %}
     {% if user.id == post.autor.id %}
+    <h3 class="blog-post-title mb-4">Editar blog post</h3>
      <article class="blog-post">
-        <h3 class="blog-post-title mb-1">Editar blog post</h3></a>
         <div class="form-group">
             <form method="POST" class="post-form">
                 {% csrf_token %}
                 <!-- {{ form.media }} -->
                 {{ form.as_p }}
-                <br><hr>
+                <br>
                 <button type="submit" class="btn btn-outline-primary rounded-pill">Guardar</button>
-                <a class="btn btn-outline-primary rounded-pill" href="{% url 'blog' %}">Volver</a>
-                <a class="btn btn-outline-danger" href="{% url 'delete_post' post.pk %}" id="delete">Delete</a>
+                <a class="btn btn-outline-danger rounded-pill" href="{% url 'delete_post' post.pk %}" id="delete">Eliminar</a>
             </form>
         </div>
-        <a class="btn-outline-primary rounded-pill" href="{% url 'add_categoria' %}">Agregar categoría</a>
-    </article>
+        <br><a class="btn btn-outline-primary rounded-pill" href="{% url 'blog' %}">Volver</a>
     {% else %}
     <p>Error. Permiso denegado.</p>
     {% endif %}

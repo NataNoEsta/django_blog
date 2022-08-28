@@ -1,22 +1,25 @@
-{% extends 'blog.html' %}
+{% extends 'home.html' %}
 {% block title %} Crear post {% endblock %}
 {% block entry %}
 {% if user.is_authenticated %}
+<h3 class="blog-post-title mb-4">Crear entrada</h3>
      <article class="blog-post">
-        <h3 class="blog-post-title mb-1">Crear blog post</h3></a>
         <div class="form-group">
             <form method="POST" class="post-form">
                 {% csrf_token %}
                 <!-- {{ form.media }} -->
                 {{ form.as_p }}
-                <button type="submit" class="btn btn-primary">Post</button>
+                <button type="submit" class="btn btn-outline-primary rounded-pill mt-4">Publicar</button>
+                <a class="btn btn-outline-primary rounded-pill mt-4" href="{% url 'add_categoria' %}">Agregar categoría</a>
             </form>
-        </div> 
+        </div>
+        <a href="{% url 'blog' %}" class="btn btn-outline-primary rounded-pill mt-4">Volver</a>
     </article>
-    <script>
-        var autor = "{{ user.id }}";
-        document.getElementById("nombre").value = autor;
-    </script>
+
+<script>
+    var autor = "{{ user.id }}";
+    document.getElementById("nombre").value = autor;
+</script>
 {% else %}
 <p>Error. Permiso denegado</p>
 {% endif %}
