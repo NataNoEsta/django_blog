@@ -7,6 +7,14 @@ body {
   background-color: whitesmoke;
   font-weight: 100;
 }
+.helptext {
+  font-size: 10px;
+  color:#727272;
+}
+ul li {
+  font-size: 10px;
+  color:#727272;
+}
 article > h3 > a {
   color:darkslategray;
   text-decoration: none;
@@ -19,7 +27,6 @@ a {
   color:orangered;
   font-weight: 200;
 }
-
 #banner {
   background-image: url("/static/lalcecsp.png");
   background-repeat: no-repeat;
@@ -35,7 +42,7 @@ background-color: transparent;
   border-left: 0.5px solid whitesmoke;
   line-height: 1em;
 }
-.nav > li > a:hover{
+a:hover{
   color: orangered;
   background-color:whitesmoke;
 }
