@@ -23,7 +23,7 @@ class PostList(ListView):
     model = Post
     template_name = 'blog.html'
     ordering = ['-fecha_publicacion']
-    paginate_by = 2
+    paginate_by = 4
 
 class EntryView(DetailView):
     model = Post
@@ -32,6 +32,7 @@ class EntryView(DetailView):
 class AddPost(CreateView):
     form_class = PostForm
     template_name = 'add_post.html'
+    success_url = reverse_lazy('blog')
 
 class EditPost(UpdateView):
     model = Post
