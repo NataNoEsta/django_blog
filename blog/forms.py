@@ -1,5 +1,5 @@
 from django import forms
-from .models import Post Categoria
+from .models import Post, Categoria
 
 choices = Categoria.objects.all().values_list('nombre','nombre')
 categorias = []
@@ -27,5 +27,4 @@ class EditForm(forms.ModelForm):
                 'titulo': forms.TextInput(attrs={'class': 'form-control'}),
                 'entrada': forms.Textarea(attrs={'class': 'form-control'}),
                 'categoria': forms.Select(choices=categorias, attrs={'class': 'form-control'}),
-
             }
