@@ -64,6 +64,12 @@ img {
   width:40rem;
   padding: 15px;
 }
+
+#img-home {
+  position: relative;
+  height: 300px;
+}
+
 #logo {
   position:relative;
   width: 12rem;
@@ -160,4 +166,7 @@ img {
 ul.list-unstyled li{
   display:inline-block;
   font-size: 1.3rem;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  padding: 2px;
 }
