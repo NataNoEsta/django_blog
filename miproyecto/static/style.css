@@ -7,11 +7,7 @@ body {
   background-color: whitesmoke;
   font-weight: 100;
 }
-#ig{
-  position: relative;
-  display:inline-block;
-  width:12px;
-}
+
 .helptext {
   font-size: 10px;
   color:#727272;
@@ -34,6 +30,7 @@ a {
 }
 #banner {
   background-image: url("/static/lalcecsp.png");
+  background-color: whitesmoke;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -138,7 +135,7 @@ img {
   display: block;
   align-self: center;
 }
-.map {
+#map {
   max-width: 600px;
   margin-right: 0px;
   margin-left: 0px;
