@@ -2,18 +2,20 @@
 **Un blog simple en Django**
 
 ## Contenido
-Este proyecto constituye el Trabajo Final Integrador _(TFI)_ del _grupo 1_-comisión 5 de la unidad II del Informatorio, Desarrollo Web.  El mismo consta del desarrollo de una _Web App_ del tipo _blog_, con la tecnología de Python/Django 
-La aplicación debe admitir el registro de usuarios, creación de entradas  y compartir entradas en redes sociales, para lo cual se requiere de la creación de una Base de Datos que almacene los datos de usuarios y de las entradas del blog.
+Este proyecto constituye el Trabajo Final Integrador _(TFI)_ del _grupo 1_-comisión 5 de la unidad II del Informatorio, Desarrollo Web.  El mismo consta del desarrollo de una _Web App_ del tipo _blog_, con la tecnología de Python/Django. 
+La aplicación debe admitir el _registro_ y _login_ de usuarios, creación de _entradas_  y compartir entradas en redes sociales, para lo cual se requiere de la creación de una Base de Datos que almacene los datos de usuarios y de las entradas del blog.
 
 ## Demo
-La versión final está alojada en (https://misitio.herokuapp.com/)
+* ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white) - Hosting del Demo
+La versión final está alojada en (https://evening-castle-75145.herokuapp.com)
 
 ## Construido con 🛠️
 Las herramientas que se utilizadon son:
 
 * ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) - Lenguaje de desarrollo
+* ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) - Base de Datos
+* ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white) - Front-end
 * ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) - Python Framework
-* ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white) - Hosting del Demo
 
 ## Prerrequisitos
 Este blog fue creado en _Python_ con el framework _Django_, por lo que el primer paso es tener ambos instalados.
@@ -44,18 +46,19 @@ Escribe lo siguiente:
 
 El comando _runserver_ ejecutado desde _manage.py_ es el servidor de desarrollo propio de Django. Este ejecuta desde tu IP local para que puedes correr el sitio.
 
-## Vista previa
-Insert here an image of the preview if your project has one. The image can be into the project, you have to indicate the route and look like this.
-
+## Vista previa / Demo
 ![](/preview.jpg)
+Video demo en youtube:
+![](Demostració)
 
 ## Integrantes/Colaboradores:
 
 :girl:[Natasha](https://github.com/natanatalina)
-:boy:[Valentino](https://github.com/Valen1210)
-:boy:[Nico](https://github.com/N1CORTES)
-:boy:[Lucas](https://github.com/lucasexrojas)
 :girl:[Giuli](https://github.com/GiulianaBonzi)
-:boy:[Fede](https://github.com/Darknessblack)
+:boy:[Lucas](https://github.com/lucasexrojas)
 
 ### Notas
+Para consultas y documentación referirse a:
+
+![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)
+![MDN Web Docs](https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white)
