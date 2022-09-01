@@ -50,11 +50,13 @@ El comando _runserver_ ejecutado desde _manage.py_ es el servidor de desarrollo 
 ![](https://github.com/natanatalina/mi_proyecto/blob/master/screenshotdemo.jpeg)
 
 
-## Integrantes/Colaboradores:
+## Integrantes:
 
 :girl:[Natasha](https://github.com/natanatalina)
 :girl:[Giuli](https://github.com/GiulianaBonzi)
 :boy:[Lucas](https://github.com/lucasexrojas)
+:boy:[Valentín](https://github.com/Valen1210)
+:boy:[Nico](https://github.com/N1CORTES)
 
 ### Notas
 Para consultas y documentación referirse a:
