@@ -9,11 +9,11 @@ for c in choices:
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('titulo', 'autor', 'entrada') # 'categoria')
+        fields = ('titulo', 'autor', 'entrada', 'categoria')
 
         widgets = {
                 'titulo': forms.TextInput(attrs={'class': 'form-control'}),
-                'autor':forms.TextInput(attrs={'class':'form-control','id':'nombre', 'value':' ', 'type':'hidden'}),
+                'autor':forms.TextInput(attrs={'class':'form-control','id':'name', 'value':' ', 'type':'hidden'}),
                 'entrada': forms.Textarea(attrs={'class': 'form-control'}),
                 'categoria': forms.Select(choices=categorias, attrs={'class': 'form-control'}),
             }
