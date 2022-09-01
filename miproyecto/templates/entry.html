@@ -27,10 +27,6 @@
             <li>{% save_to_pinterest object_or_url %}</li>
         </ul>
     </div>
-    <div class="comments mt-2 p-1">
-        <div class="fb-like" data-href="{{ request.get_full_path }}" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
-        <div class="fb-comments" data-href="{{ request.get_full_path }}" data-width="400" data-numposts="5"></div>
-    </div>
 
 {% add_pinterest_script %}
 {% endblock %}
