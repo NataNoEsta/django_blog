@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-)6!p8#6+_-igln(t**bf%fo-$dbe+v@)906dshswi0=14st9y2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['blogcomi5grupo1.herokuapp.com']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -128,14 +128,14 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(os.path.dirname(BASE_DIR), 'miproyecto/static'),
+    os.path.join(BASE_DIR, 'static'),
 ]
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'    
  
     
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR),'media'),
+MEDIA_ROOT = os.path.join(BASE_DIR,'media'),
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
