@@ -6,7 +6,7 @@
     <article class="blog-post">
         <h3 class="blog-post-title mb-4">{{ post.titulo }}</h3></a>
         <p class="blog-post-meta">Por: {{ post.autor.first_name }} {{ post.autor.last_name }} | {{ post.fecha_publicacion }}</p>
-        <p>{{ post.entrada }} </p> 
+        <p>{{ post.entrada|safe }} </p> 
         <br>
         <p class="blog-post-meta" id="tags"><i class="bi bi-tags"></i><a href="{% url 'categorias' post.categoria %}">{{ post.categoria }}</a></p> 
         <a href="{% url 'blog' %}" class="btn btn-outline-primary rounded-pill">Volver</a>
@@ -16,20 +16,20 @@
             {% endif %}
         {% endif %}
     </article>
-    <div class="socials mt-1 px-1">
+    <div class="socials mt-1">
         <p>Si te gustó este contenido, compartí en las redes!</p>
         <ul class="list-unstyled d-inline">
-            <li>{% post_to_facebook object_or_url "w" %}</li>
-            <li>{% post_to_whatsapp object_or_url "w" %}</li>
-            <li>{% post_to_twitter "New Post!: {{ object.title }}" object_or_url "w" %}</li>
-            <li>{% send_email object.title "New Post: {{ object.title }}" object_or_url "w" %}</li>
+            <li>{% post_to_facebook object_or_url "" %}</li>
+            <li>{% post_to_whatsapp object_or_url "" %}</li>
+            <li>{% post_to_twitter "New Post!: {{ object.title }}" object_or_url "" %}</li>
+            <li>{% send_email object.title "New Post: {{ object.title }}" object_or_url "" %}</li>
             <li>{% post_to_linkedin object_or_url %}</li>
             <li>{% save_to_pinterest object_or_url %}</li>
         </ul>
     </div>
-    <div class="comments mt-3 p-2">
-        <div class="fb-like" data-href="{{ post.post_id }}" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
-        <div class="fb-comments" data-href="{{ post.post_id }}" data-width="400" data-numposts="5"></div>
+    <div class="comments mt-2 p-1">
+        <div class="fb-like" data-href="{{ request.get_full_path }}" data-layout="standard" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+        <div class="fb-comments" data-href="{{ request.get_full_path }}" data-width="400" data-numposts="5"></div>
     </div>
 
 {% add_pinterest_script %}
