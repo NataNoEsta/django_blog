@@ -67,11 +67,6 @@ img {
   padding: 15px;
 }
 
-#img-home {
-  position: relative;
-  height: 300px;
-}
-
 #logo {
   position:relative;
   width: 12rem;
@@ -86,7 +81,7 @@ img {
 }
 
 .blog-header-logo {
-  font-family: Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: 'Montserrat', "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
   font-size: 2rem;
 }
 
