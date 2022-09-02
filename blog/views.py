@@ -1,6 +1,6 @@
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from .forms import PostForm, EditForm
-from .models import Post
+from .models import Post, Categoria
 from django.shortcuts import render
 from django.urls import reverse_lazy, reverse
 
@@ -44,10 +44,10 @@ class DeletePost(DeleteView):
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
 
-# class AddCategoria(CreateView):
-#     model = Categoria
-#     template_name = 'add_categoria.html'
-#     fields = '__all__'
+class AddCategoria(CreateView):
+    model = Categoria
+    template_name = 'add_categoria.html'
+    fields = '__all__'
 
 # def CategoriasView(request, categoria):
 #     categoria_posts = Post.objects.filter(categoria=categoria.replace('-',' '))
