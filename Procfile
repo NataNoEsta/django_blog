@@ -1,1 +1,1 @@
-web: gunicorn miproyecto.wsgi
+web: gunicorn --pythonpath miproyecto miproyecto.wsgi --log-file -
