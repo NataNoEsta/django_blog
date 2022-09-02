@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-)6!p8#6+_-igln(t**bf%fo-$dbe+v@)906dshswi0=14st9y2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'miproyecto.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'bd_proyecto',
+        'NAME': 'bd_blog',
         'USER': 'postgres',
         'PASSWORD': 'Namecuseis1',
         'HOST': '127.0.0.1',

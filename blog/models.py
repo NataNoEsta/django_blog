@@ -10,7 +10,7 @@ class Post(models.Model):
     entrada = models.TextField()
     fecha_creacion = models.DateTimeField(blank=True, default=timezone.now)
     fecha_publicacion = models.DateTimeField(blank=True, default=timezone.now)
-    categoria = models.CharField(max_length=255, default='Noticias')
+    categoria = models.CharField(max_length=255, default='default')
 
     def publicar(self):
         self.fecha_publicacion = timezone.now()
@@ -24,7 +24,7 @@ class Post(models.Model):
         return f'{self.titulo}'
 
 class Categoria(models.Model):
-    nombre = models.CharField(max_length=255)
+    nombre = models.CharField(max_length=100)
 
     def __str__(self):
         return f'{self.nombre}'

@@ -1,9 +1,9 @@
 from django.urls import path
 from . import views
-from .views import AddCategoria, PostList, EntryView, AddPost, EditPost, DeletePost, AddCategoria, CategoriasView
+from .views import PostList, EntryView, AddPost, EditPost, DeletePost
+# AddCategoria, CategoriasView
 
 urlpatterns = [
-    #path('', HomeView.as_view(), name='home'),
     path('', views.homeView, name='home'),
     path('acerca/', views.acercaView, name='acerca'),
     path('acciones/', views.accionesView, name='acciones'),
@@ -13,6 +13,6 @@ urlpatterns = [
     path('blog/add_post/', AddPost.as_view() , name='add_post'),
     path('blog/entry/<int:pk>/edit_post/', EditPost.as_view() , name='edit_post'),
     path('blog/entry/<int:pk>/delete_post/', DeletePost.as_view() , name='delete_post'),
-    path('blog/add_categoria/', AddCategoria.as_view(), name='add_categoria'),
-    path('blog/categorias/<str:categoria>/', CategoriasView, name='categorias'),
+    # path('blog/add_categoria/', AddCategoria.as_view(), name='add_categoria'),
+    # path('blog/categorias/<str:categoria>/', CategoriasView, name='categorias'),
 ]
