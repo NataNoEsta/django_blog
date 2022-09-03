@@ -1,3 +1,3 @@
 from base import *
 
-ALLOWED_HOSTS = ['blogcomi5grupo1.herokuapp.com']
+ALLOWED_HOSTS = ['secret-coast-83416.herokuapp.com']
