@@ -1,7 +1,7 @@
 from django.urls import path
 from . import views
 from .views import PostList, EntryView, AddPost, EditPost, DeletePost, AddCategoria
-# AddCategoria, CategoriasView
+#CategoriasView
 
 urlpatterns = [
     path('', views.homeView, name='home'),
