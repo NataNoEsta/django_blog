@@ -7,7 +7,7 @@ La aplicación debe admitir el _registro_ y _login_ de usuarios, creación de _e
 
 ## Demo
 * ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white) - Hosting del Demo
-La versión final está alojada en (https://blogcomi5grupo1.herokuapp.com/)
+La versión final está alojada en (https://secret-coast-83416.herokuapp.com/)
 
 ## Construido con 🛠️
 Las herramientas que se utilizadon son:
