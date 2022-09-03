@@ -4,6 +4,15 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 # Create your models here.
 
+class Categoria(models.Model):
+    nombre = models.CharField(max_length=100)
+
+    def __str__(self):
+        return f'{self.nombre}'
+
+    def get_absolute_url(self):
+        return reverse('home')
+
 class Post(models.Model):
     autor = models.ForeignKey(User, on_delete=models.CASCADE)
     titulo = models.CharField(max_length=255)
@@ -22,12 +31,3 @@ class Post(models.Model):
 
     def __str__(self):
         return f'{self.titulo}'
-
-class Categoria(models.Model):
-    nombre = models.CharField(max_length=100)
-
-    def __str__(self):
-        return f'{self.nombre}'
-
-    def get_absolute_url(self):
-        return reverse('blog')
