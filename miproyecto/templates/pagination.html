@@ -6,13 +6,13 @@
       
     {% if page_obj.has_previous %}
     <a class="btn btn-outline-primary rounded-pill " href="?page=1">Inicio</a>
-    <a class="btn btn-outline-primary rounded-pill" href="?page={{ page_obj.previous_page_number }}">←-</a>
+    <a class="btn btn-outline-primary rounded-pill" href="?page={{ page_obj.previous_page_number }}">Anterior</a>
     {% endif %}
     <span class="current">
         {{ page_obj.number }}...{{ page_obj.paginator.num_pages }}.
     </span>
     {% if page_obj.has_next %}
-    <a class="btn btn-outline-primary rounded-pill " href="?page={{ page_obj.next_page_number }}">-→</a>
+    <a class="btn btn-outline-primary rounded-pill " href="?page={{ page_obj.next_page_number }}">Siguiente</a>
     <a class="btn btn-outline-primary rounded-pill" href="?page={{ page_obj.paginator.num_pages }}">Fin</a>
     {% endif %}
 {% endblock %}    
