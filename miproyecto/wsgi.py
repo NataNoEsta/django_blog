@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.0/howto/deployment/wsgi/
 
 import os
 
-os.environ['DJANGO_SETTINGS_MODULE']  = 'miproyecto.settings.produccion'
+os.environ['DJANGO_SETTINGS_MODULE']  = 'miproyecto.settings'
 
 from django.core.wsgi import get_wsgi_application
 
