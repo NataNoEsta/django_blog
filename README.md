@@ -47,19 +47,4 @@ Escribe lo siguiente:
 El comando _runserver_ ejecutado desde _manage.py_ es el servidor de desarrollo propio de Django. Este ejecuta desde tu IP local para que puedes correr el sitio.
 
 ## Vista previa / Demo
-![](https://github.com/natanatalina/mi_proyecto/blob/master/screenshotdemo.jpeg)
-
-
-## Integrantes:
-
-:girl:[Natasha](https://github.com/natanatalina)
-:girl:[Giuli](https://github.com/GiulianaBonzi)
-:boy:[Lucas](https://github.com/lucasexrojas)
-:boy:[Valentín](https://github.com/Valen1210)
-:boy:[Nico](https://github.com/N1CORTES)
-
-### Notas
-Para consultas y documentación referirse a:
-
-![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)
-![MDN Web Docs](https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white)
+![](https://github.com/NataNoEsta/mi_proyecto/blob/master/screenshotdemo.jpeg)
